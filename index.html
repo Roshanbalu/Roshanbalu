@@ -1,402 +1,324 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roshan — UI/UX Designer</title>
+  <title>Roshan | UI/UX Designer</title>
+
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- Custom Cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursorFollower"></div>
+  <!-- BACKGROUND EFFECT -->
+  <div class="bg-blur blur1"></div>
+  <div class="bg-blur blur2"></div>
+  <div class="grid-overlay"></div>
 
-  <!-- ───── NAVBAR ───── -->
-  <header class="navbar" id="navbar">
-    <div class="nav-logo">
-      <span class="logo-text">R<span class="logo-dot">.</span></span>
+  <!-- NAVBAR -->
+  <header class="navbar glass">
+    <div class="logo">
+      Roshan<span>.</span>
     </div>
 
-    <nav class="nav-links" id="navLinks">
-      <a href="#about" class="nav-item" data-label="About">About</a>
-      <a href="#skills" class="nav-item" data-label="Skills">Skills</a>
-      <a href="#certifications" class="nav-item" data-label="Certs">Certifications</a>
-      <a href="#contact" class="nav-item" data-label="Contact">Contact</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <div class="nav-right">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <span class="toggle-track">
-          <span class="toggle-thumb"></span>
-          <span class="icon sun">☀</span>
-          <span class="icon moon">☽</span>
-        </span>
-      </button>
-      <button class="burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    <a href="#contact" class="nav-btn">Hire Me</a>
   </header>
 
-  <!-- ───── HERO ───── -->
-  <section class="hero" id="about">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-    </div>
+  <!-- HERO -->
+  <section class="hero" id="home">
 
     <div class="hero-content">
-      <p class="hero-eyebrow">
-        <span class="eyebrow-dot"></span> Available for work
-      </p>
-      <h1 class="hero-title">
-        <span class="title-line reveal-line">Roshan</span>
-        <span class="title-line title-line--accent reveal-line">UI/UX</span>
-        <span class="title-line reveal-line">Designer</span>
+
+      <div class="hero-badge glass">
+        ✨ UI/UX Designer & Creative Thinker
+      </div>
+
+      <h1>
+        Designing <span>Futuristic</span><br />
+        Digital Experiences
       </h1>
-      <p class="hero-desc reveal-fade">
-        I strip away complexity to craft elegant, intuitive digital journeys —
-        where technology meets human-centred design.
+
+      <p>
+        Passionate UI/UX Designer with a background in AI & Data Science,
+        focused on creating intuitive, elegant, and human-centered digital products.
       </p>
-      <div class="hero-cta reveal-fade">
-        <a href="#contact" class="btn btn-primary">
-          <span>Let's Talk</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/roshan-b-0851b4251/" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="primary-btn">View Projects</a>
+        <a href="#contact" class="secondary-btn">Let's Talk</a>
       </div>
+
     </div>
 
-    <div class="hero-visual reveal-fade">
-      <div class="avatar-ring">
-        <div class="avatar-inner">
-          <div class="avatar-initials">RB</div>
-        </div>
-        <svg class="ring-svg" viewBox="0 0 200 200">
-          <circle cx="100" cy="100" r="90" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="6 4" />
-        </svg>
-        <div class="orbit-dot orbit-dot--1"></div>
-        <div class="orbit-dot orbit-dot--2"></div>
+    <div class="hero-card glass">
+      <div class="floating-circle"></div>
+
+      <div class="mini-card glass">
+        <h3>UI/UX</h3>
+        <p>Modern Interfaces</p>
       </div>
-      <div class="hero-badge badge-1">
-        <span class="badge-icon">✦</span> Figma Expert
+
+      <div class="mini-card glass">
+        <h3>Research</h3>
+        <p>User-Centered Design</p>
       </div>
-      <div class="hero-badge badge-2">
-        <span class="badge-icon">◈</span> B.Tech AI & DS
+
+      <div class="mini-card glass">
+        <h3>Prototyping</h3>
+        <p>Interactive Experiences</p>
       </div>
-      <div class="hero-badge badge-3">
-        <span class="badge-icon">❋</span> PG Diploma UX
-      </div>
+
     </div>
 
-    <div class="scroll-hint">
-      <span class="scroll-line"></span>
-      <span class="scroll-label">scroll</span>
-    </div>
   </section>
 
-  <!-- ───── ABOUT STRIP ───── -->
-  <section class="about-strip">
-    <div class="strip-inner">
-      <div class="strip-stat">
-        <span class="stat-num">2+</span>
-        <span class="stat-label">Years Designing</span>
-      </div>
-      <div class="strip-divider"></div>
-      <div class="strip-stat">
-        <span class="stat-num">10+</span>
-        <span class="stat-label">Tools Mastered</span>
-      </div>
-      <div class="strip-divider"></div>
-      <div class="strip-stat">
-        <span class="stat-num">∞</span>
-        <span class="stat-label">Ideas to Ship</span>
-      </div>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+
+    <div class="section-title">
+      <span>About Me</span>
+      <h2>Crafting Human-Centered Experiences</h2>
     </div>
+
+    <div class="about-container">
+
+      <div class="about-card glass">
+        <h3>Who I Am</h3>
+
+        <p>
+          I am a UI/UX Designer passionate about blending creativity,
+          technology, and usability into meaningful digital experiences.
+          With a technical background in AI & Data Science and advanced
+          specialization in UI/UX Design, I create products that feel
+          elegant, intuitive, and impactful.
+        </p>
+      </div>
+
+      <div class="about-card glass">
+        <h3>Education</h3>
+
+        <p>
+          <strong>PG Diploma in UI/UX Design</strong><br />
+          ICAT Design & Media College
+        </p>
+
+        <p>
+          <strong>B.Tech in AI & Data Science</strong><br />
+          Kongunadu College of Engineering & Technology
+        </p>
+      </div>
+
+    </div>
+
   </section>
 
-  <!-- ───── SKILLS ───── -->
-  <section class="section skills-section" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">02 / Skills</span>
-        <h2 class="section-title">What I <em>bring</em> to the table</h2>
-      </div>
+  <!-- SKILLS -->
+  <section class="section" id="skills">
 
-      <div class="skills-grid">
-
-        <div class="skill-card" data-tilt>
-          <div class="skill-card-bg"></div>
-          <div class="skill-icon">◯</div>
-          <h3>UI/UX Design</h3>
-          <ul class="skill-list">
-            <li>User Interface Design</li>
-            <li>User Experience Design</li>
-            <li>Design Thinking</li>
-            <li>Responsive Design</li>
-            <li>Usability Testing</li>
-          </ul>
-        </div>
-
-        <div class="skill-card" data-tilt>
-          <div class="skill-card-bg"></div>
-          <div class="skill-icon">◻</div>
-          <h3>Research & Process</h3>
-          <ul class="skill-list">
-            <li>Wireframing</li>
-            <li>Prototyping</li>
-            <li>User Research</li>
-            <li>Interaction Design</li>
-            <li>Design Systems</li>
-          </ul>
-        </div>
-
-        <div class="skill-card" data-tilt>
-          <div class="skill-card-bg"></div>
-          <div class="skill-icon">△</div>
-          <h3>Tools</h3>
-          <ul class="skill-list">
-            <li>Figma</li>
-            <li>Adobe After Effects</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-          </ul>
-        </div>
-
-        <div class="skill-card" data-tilt>
-          <div class="skill-card-bg"></div>
-          <div class="skill-icon">⬡</div>
-          <h3>Technical</h3>
-          <ul class="skill-list">
-            <li>HTML & CSS</li>
-            <li>Basic JavaScript</li>
-            <li>Web Design Principles</li>
-            <li>AI & Data Science</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Soft Skills Row -->
-      <div class="soft-skills-row">
-        <span class="soft-pill">Communication</span>
-        <span class="soft-pill">Team Collaboration</span>
-        <span class="soft-pill">Problem Solving</span>
-        <span class="soft-pill">Creativity</span>
-        <span class="soft-pill">Time Management</span>
-      </div>
+    <div class="section-title">
+      <span>Skills</span>
+      <h2>Design & Technical Expertise</h2>
     </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card glass">
+        <h3>UI Design</h3>
+        <p>Modern interfaces with premium visual aesthetics.</p>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>UX Research</h3>
+        <p>User-centered flows, testing, and usability analysis.</p>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Wireframing</h3>
+        <p>Creating low and high fidelity design structures.</p>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Prototyping</h3>
+        <p>Interactive product experiences using Figma.</p>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Frontend</h3>
+        <p>HTML, CSS & responsive web design principles.</p>
+      </div>
+
+      <div class="skill-card glass">
+        <h3>Creative Tools</h3>
+        <p>Figma, Photoshop, Illustrator & After Effects.</p>
+      </div>
+
+    </div>
+
   </section>
 
-  <!-- ───── EDUCATION ───── -->
-  <section class="section edu-section" id="education">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">03 / Education</span>
-        <h2 class="section-title">My <em>academic</em> journey</h2>
-      </div>
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="tl-year">Present</span>
-            <h3>PG Diploma in UI/UX Design</h3>
-            <p class="tl-place">ICAT Design and Media College</p>
-            <p class="tl-desc">User research, wireframing, prototyping, usability testing, interaction design, and design systems.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="tl-year">2025</span>
-            <h3>B.Tech — AI &amp; Data Science</h3>
-            <p class="tl-place">Kongunadu College of Engineering &amp; Technology, Namakkal</p>
-            <p class="tl-desc">Technical foundation in Artificial Intelligence, Data Science, and engineering principles.</p>
-          </div>
-        </div>
-      </div>
+    <div class="section-title">
+      <span>Projects</span>
+      <h2>Featured Work</h2>
     </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card glass">
+        <div class="project-image"></div>
+
+        <div class="project-content">
+          <h3>ParentVoice</h3>
+
+          <p>
+            A confidence-building storytelling app for kids focused on
+            emotional development and interactive experiences.
+          </p>
+
+          <a href="#">View Case Study →</a>
+        </div>
+      </div>
+
+      <div class="project-card glass">
+        <div class="project-image"></div>
+
+        <div class="project-content">
+          <h3>Fitness Dashboard</h3>
+
+          <p>
+            A futuristic health tracking dashboard with analytics,
+            personalized insights, and smooth user interaction.
+          </p>
+
+          <a href="#">View Case Study →</a>
+        </div>
+      </div>
+
+      <div class="project-card glass">
+        <div class="project-image"></div>
+
+        <div class="project-content">
+          <h3>Travel Experience App</h3>
+
+          <p>
+            Designed a seamless travel booking experience with modern UI,
+            accessibility, and immersive interactions.
+          </p>
+
+          <a href="#">View Case Study →</a>
+        </div>
+      </div>
+
+    </div>
+
   </section>
 
-  <!-- ───── CERTIFICATIONS ───── -->
-  <section class="section cert-section" id="certifications">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">04 / Certifications</span>
-        <h2 class="section-title">Credentials &amp; <em>learning</em></h2>
+  <!-- CASE STUDIES -->
+  <section class="section" id="case-study">
+
+    <div class="section-title">
+      <span>Case Studies</span>
+      <h2>Design Thinking Process</h2>
+    </div>
+
+    <div class="case-study-container">
+
+      <div class="case-card glass">
+        <h3>01. Research</h3>
+        <p>User interviews, competitor analysis & empathy mapping.</p>
       </div>
 
-      <div class="cert-grid">
-        <div class="cert-card">
-          <div class="cert-icon">✦</div>
-          <div class="cert-info">
-            <h3>UI/UX Design Certification</h3>
-            <span class="cert-issuer">Professional Certification</span>
-          </div>
-          <div class="cert-badge">Certified</div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon">◈</div>
-          <div class="cert-info">
-            <h3>Figma for UI/UX Design</h3>
-            <span class="cert-issuer">Platform Certification</span>
-          </div>
-          <div class="cert-badge">Certified</div>
-        </div>
+      <div class="case-card glass">
+        <h3>02. Wireframing</h3>
+        <p>Low-fidelity concepts transformed into clear user flows.</p>
       </div>
+
+      <div class="case-card glass">
+        <h3>03. UI Design</h3>
+        <p>Premium visuals with accessibility and usability in mind.</p>
+      </div>
+
+      <div class="case-card glass">
+        <h3>04. Testing</h3>
+        <p>Iterative improvements based on user feedback and insights.</p>
+      </div>
+
     </div>
+
   </section>
 
-  <!-- ───── CONTACT ───── -->
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+
+    <div class="section-title">
+      <span>Experience</span>
+      <h2>My Journey</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item glass">
+        <h3>UI/UX Designer</h3>
+        <span>2025 - Present</span>
+
+        <p>
+          Designing intuitive interfaces, conducting user research,
+          and building interactive prototypes.
+        </p>
+      </div>
+
+      <div class="timeline-item glass">
+        <h3>UI/UX Projects & Case Studies</h3>
+        <span>2024 - 2025</span>
+
+        <p>
+          Worked on multiple conceptual and real-world design systems
+          and user experiences.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
   <section class="section contact-section" id="contact">
-    <div class="container">
-      <div class="contact-inner">
-        <div class="contact-left">
-          <span class="section-tag">05 / Contact</span>
-          <h2 class="section-title">Let's <em>create</em><br/>something great</h2>
-          <p class="contact-sub">Open to freelance projects, full-time roles, and interesting collaborations.</p>
-        </div>
-        <div class="contact-right">
-          <a href="mailto:roshanromu15@gmail.com" class="contact-link">
-            <span class="cl-label">Email</span>
-            <span class="cl-value">roshanromu15@gmail.com <span class="cl-arrow">↗</span></span>
-          </a>
-          <a href="tel:+919952409625" class="contact-link">
-            <span class="cl-label">Phone</span>
-            <span class="cl-value">+91 99524 09625 <span class="cl-arrow">↗</span></span>
-          </a>
-          <a href="https://www.linkedin.com/in/roshan-b-0851b4251/" target="_blank" class="contact-link">
-            <span class="cl-label">LinkedIn</span>
-            <span class="cl-value">roshan-b-0851b4251 <span class="cl-arrow">↗</span></span>
-          </a>
-          <a href="yourportfolio.com" class="contact-link">
-            <span class="cl-label">Portfolio</span>
-            <span class="cl-value">yourportfolio.com <span class="cl-arrow">↗</span></span>
-          </a>
-          <div class="contact-location">
-            <span>📍 Bengaluru, India</span>
-          </div>
-        </div>
-      </div>
+
+    <div class="section-title">
+      <span>Contact</span>
+      <h2>Let's Build Something Amazing</h2>
     </div>
+
+    <div class="contact-container glass">
+
+      <p>
+        Open for collaborations, freelance projects, and creative opportunities.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:roshanromu15@gmail.com">Email Me</a>
+        <a href="https://www.linkedin.com/in/roshan-b-0851b4251/" target="_blank">LinkedIn</a>
+      </div>
+
+    </div>
+
   </section>
 
-  <!-- ───── FOOTER ───── -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <span class="footer-logo">Roshan<span class="logo-dot">.</span></span>
-      <span class="footer-copy">© 2025 — Designed with intent</span>
-      <span class="footer-lang">English · Tamil</span>
-    </div>
-  </footer>
-
-  <script>
-    // ── Theme Toggle ──
-    const html = document.documentElement;
-    const toggleBtn = document.getElementById('themeToggle');
-    const saved = localStorage.getItem('theme') || 'light';
-    html.setAttribute('data-theme', saved);
-
-    toggleBtn.addEventListener('click', () => {
-      const current = html.getAttribute('data-theme');
-      const next = current === 'light' ? 'dark' : 'light';
-      html.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-    });
-
-    // ── Navbar scroll ──
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 60);
-    });
-
-    // ── Burger menu ──
-    const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('navLinks');
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('open');
-      navLinks.classList.toggle('open');
-    });
-    navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        burger.classList.remove('open');
-        navLinks.classList.remove('open');
-      });
-    });
-
-    // ── Custom Cursor ──
-    const cursor = document.getElementById('cursor');
-    const follower = document.getElementById('cursorFollower');
-    let mx = 0, my = 0, fx = 0, fy = 0;
-
-    document.addEventListener('mousemove', e => {
-      mx = e.clientX; my = e.clientY;
-      cursor.style.transform = `translate(${mx}px, ${my}px)`;
-    });
-
-    function animateFollower() {
-      fx += (mx - fx) * 0.12;
-      fy += (my - fy) * 0.12;
-      follower.style.transform = `translate(${fx}px, ${fy}px)`;
-      requestAnimationFrame(animateFollower);
-    }
-    animateFollower();
-
-    document.querySelectorAll('a, button, .skill-card, .cert-card').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        cursor.classList.add('hover');
-        follower.classList.add('hover');
-      });
-      el.addEventListener('mouseleave', () => {
-        cursor.classList.remove('hover');
-        follower.classList.remove('hover');
-      });
-    });
-
-    // ── Tilt Cards ──
-    document.querySelectorAll('[data-tilt]').forEach(card => {
-      card.addEventListener('mousemove', e => {
-        const r = card.getBoundingClientRect();
-        const x = (e.clientX - r.left) / r.width - 0.5;
-        const y = (e.clientY - r.top) / r.height - 0.5;
-        card.style.transform = `perspective(600px) rotateY(${x * 12}deg) rotateX(${-y * 12}deg) translateZ(8px)`;
-      });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = 'perspective(600px) rotateY(0) rotateX(0) translateZ(0)';
-      });
-    });
-
-    // ── Scroll Reveal ──
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll(
-      '.skill-card, .timeline-item, .cert-card, .section-header, .contact-link, .soft-pill'
-    ).forEach(el => observer.observe(el));
-
-    // ── Smooth scroll ──
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-  </script>
 </body>
 </html>
