@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Roshan | UI/UX Designer</title>
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css"/>
 
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -15,13 +16,13 @@
 
 <body>
 
-  <!-- BACKGROUND EFFECT -->
-  <div class="bg-blur blur1"></div>
-  <div class="bg-blur blur2"></div>
-  <div class="grid-overlay"></div>
+  <!-- BACKGROUND EFFECTS -->
+  <div class="gradient-bg"></div>
+  <div class="noise"></div>
 
   <!-- NAVBAR -->
   <header class="navbar glass">
+
     <div class="logo">
       Roshan<span>.</span>
     </div>
@@ -31,30 +32,34 @@
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#case-studies">Case Studies</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a href="#contact" class="nav-btn">Hire Me</a>
+    <a href="#contact" class="nav-btn">
+      Hire Me
+    </a>
+
   </header>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <section class="hero" id="home">
 
     <div class="hero-content">
 
-      <div class="hero-badge glass">
+      <div class="hero-tag glass">
         ✨ UI/UX Designer & Creative Thinker
       </div>
 
       <h1>
-        Designing <span>Futuristic</span><br />
-        Digital Experiences
+        Designing <span>Digital</span><br/>
+        Experiences That Feel Alive
       </h1>
 
       <p>
         Passionate UI/UX Designer with a background in AI & Data Science,
-        focused on creating intuitive, elegant, and human-centered digital products.
+        focused on creating elegant, intuitive, and user-centered digital products.
       </p>
 
       <div class="hero-buttons">
@@ -64,22 +69,21 @@
 
     </div>
 
-    <div class="hero-card glass">
-      <div class="floating-circle"></div>
+    <div class="hero-visual glass">
 
-      <div class="mini-card glass">
-        <h3>UI/UX</h3>
-        <p>Modern Interfaces</p>
+      <div class="floating-card glass">
+        <h3>UI Design</h3>
+        <p>Modern premium interfaces</p>
       </div>
 
-      <div class="mini-card glass">
-        <h3>Research</h3>
-        <p>User-Centered Design</p>
+      <div class="floating-card glass">
+        <h3>User Research</h3>
+        <p>Human-centered experiences</p>
       </div>
 
-      <div class="mini-card glass">
+      <div class="floating-card glass">
         <h3>Prototyping</h3>
-        <p>Interactive Experiences</p>
+        <p>Interactive user flows</p>
       </div>
 
     </div>
@@ -89,12 +93,12 @@
   <!-- ABOUT -->
   <section class="section" id="about">
 
-    <div class="section-title">
+    <div class="section-heading">
       <span>About Me</span>
-      <h2>Crafting Human-Centered Experiences</h2>
+      <h2>Creating Seamless Human Experiences</h2>
     </div>
 
-    <div class="about-container">
+    <div class="about-grid">
 
       <div class="about-card glass">
         <h3>Who I Am</h3>
@@ -102,24 +106,24 @@
         <p>
           I am a UI/UX Designer passionate about blending creativity,
           technology, and usability into meaningful digital experiences.
-          With a technical background in AI & Data Science and advanced
-          specialization in UI/UX Design, I create products that feel
-          elegant, intuitive, and impactful.
+          With a strong background in AI & Data Science and advanced UI/UX specialization,
+          I create products that feel intuitive, elegant, and impactful.
         </p>
       </div>
 
       <div class="about-card glass">
         <h3>Education</h3>
 
-        <p>
-          <strong>PG Diploma in UI/UX Design</strong><br />
-          ICAT Design & Media College
-        </p>
+        <div class="edu-item">
+          <h4>PG Diploma in UI/UX Design</h4>
+          <p>ICAT Design & Media College</p>
+        </div>
 
-        <p>
-          <strong>B.Tech in AI & Data Science</strong><br />
-          Kongunadu College of Engineering & Technology
-        </p>
+        <div class="edu-item">
+          <h4>B.Tech AI & Data Science</h4>
+          <p>Kongunadu College of Engineering & Technology</p>
+        </div>
+
       </div>
 
     </div>
@@ -129,26 +133,26 @@
   <!-- SKILLS -->
   <section class="section" id="skills">
 
-    <div class="section-title">
+    <div class="section-heading">
       <span>Skills</span>
-      <h2>Design & Technical Expertise</h2>
+      <h2>Tools & Expertise</h2>
     </div>
 
     <div class="skills-grid">
 
       <div class="skill-card glass">
         <h3>UI Design</h3>
-        <p>Modern interfaces with premium visual aesthetics.</p>
+        <p>Modern user interfaces with premium aesthetics.</p>
       </div>
 
       <div class="skill-card glass">
         <h3>UX Research</h3>
-        <p>User-centered flows, testing, and usability analysis.</p>
+        <p>User behavior analysis and usability testing.</p>
       </div>
 
       <div class="skill-card glass">
         <h3>Wireframing</h3>
-        <p>Creating low and high fidelity design structures.</p>
+        <p>Low and high fidelity design structures.</p>
       </div>
 
       <div class="skill-card glass">
@@ -158,7 +162,7 @@
 
       <div class="skill-card glass">
         <h3>Frontend</h3>
-        <p>HTML, CSS & responsive web design principles.</p>
+        <p>HTML, CSS, and responsive design principles.</p>
       </div>
 
       <div class="skill-card glass">
@@ -173,56 +177,62 @@
   <!-- PROJECTS -->
   <section class="section" id="projects">
 
-    <div class="section-title">
+    <div class="section-heading">
       <span>Projects</span>
-      <h2>Featured Work</h2>
+      <h2>Featured Projects</h2>
     </div>
 
     <div class="projects-grid">
 
       <div class="project-card glass">
+
         <div class="project-image"></div>
 
         <div class="project-content">
           <h3>ParentVoice</h3>
 
           <p>
-            A confidence-building storytelling app for kids focused on
-            emotional development and interactive experiences.
+            A storytelling and confidence-building mobile app for children,
+            designed with emotional engagement and accessibility in mind.
           </p>
 
           <a href="#">View Case Study →</a>
         </div>
+
       </div>
 
       <div class="project-card glass">
-        <div class="project-image"></div>
+
+        <div class="project-image second"></div>
 
         <div class="project-content">
           <h3>Fitness Dashboard</h3>
 
           <p>
-            A futuristic health tracking dashboard with analytics,
-            personalized insights, and smooth user interaction.
+            Futuristic fitness analytics dashboard with clean layouts,
+            personalized tracking, and immersive interactions.
           </p>
 
           <a href="#">View Case Study →</a>
         </div>
+
       </div>
 
       <div class="project-card glass">
-        <div class="project-image"></div>
+
+        <div class="project-image third"></div>
 
         <div class="project-content">
           <h3>Travel Experience App</h3>
 
           <p>
-            Designed a seamless travel booking experience with modern UI,
-            accessibility, and immersive interactions.
+            A seamless travel planning experience focused on clarity,
+            accessibility, and smooth booking interactions.
           </p>
 
           <a href="#">View Case Study →</a>
         </div>
+
       </div>
 
     </div>
@@ -230,33 +240,33 @@
   </section>
 
   <!-- CASE STUDIES -->
-  <section class="section" id="case-study">
+  <section class="section" id="case-studies">
 
-    <div class="section-title">
+    <div class="section-heading">
       <span>Case Studies</span>
-      <h2>Design Thinking Process</h2>
+      <h2>My Design Process</h2>
     </div>
 
-    <div class="case-study-container">
+    <div class="case-grid">
 
       <div class="case-card glass">
         <h3>01. Research</h3>
-        <p>User interviews, competitor analysis & empathy mapping.</p>
+        <p>User interviews, competitor analysis, empathy mapping.</p>
       </div>
 
       <div class="case-card glass">
         <h3>02. Wireframing</h3>
-        <p>Low-fidelity concepts transformed into clear user flows.</p>
+        <p>Structuring smooth and intuitive user journeys.</p>
       </div>
 
       <div class="case-card glass">
         <h3>03. UI Design</h3>
-        <p>Premium visuals with accessibility and usability in mind.</p>
+        <p>Premium visual interfaces with modern interactions.</p>
       </div>
 
       <div class="case-card glass">
         <h3>04. Testing</h3>
-        <p>Iterative improvements based on user feedback and insights.</p>
+        <p>Improving usability through feedback and iteration.</p>
       </div>
 
     </div>
@@ -266,9 +276,9 @@
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
 
-    <div class="section-title">
+    <div class="section-heading">
       <span>Experience</span>
-      <h2>My Journey</h2>
+      <h2>Professional Journey</h2>
     </div>
 
     <div class="timeline">
@@ -279,7 +289,7 @@
 
         <p>
           Designing intuitive interfaces, conducting user research,
-          and building interactive prototypes.
+          and building interactive prototypes for modern applications.
         </p>
       </div>
 
@@ -288,8 +298,8 @@
         <span>2024 - 2025</span>
 
         <p>
-          Worked on multiple conceptual and real-world design systems
-          and user experiences.
+          Worked on multiple conceptual and real-world projects
+          focused on user-centered experiences.
         </p>
       </div>
 
@@ -300,20 +310,22 @@
   <!-- CONTACT -->
   <section class="section contact-section" id="contact">
 
-    <div class="section-title">
-      <span>Contact</span>
-      <h2>Let's Build Something Amazing</h2>
-    </div>
+    <div class="contact-card glass">
 
-    <div class="contact-container glass">
+      <span>Contact</span>
+
+      <h2>Let's Build Something Amazing</h2>
 
       <p>
-        Open for collaborations, freelance projects, and creative opportunities.
+        Open for freelance projects, collaborations, and exciting opportunities.
       </p>
 
       <div class="contact-links">
         <a href="mailto:roshanromu15@gmail.com">Email Me</a>
-        <a href="https://www.linkedin.com/in/roshan-b-0851b4251/" target="_blank">LinkedIn</a>
+
+        <a href="https://www.linkedin.com/in/roshan-b-0851b4251/" target="_blank">
+          LinkedIn
+        </a>
       </div>
 
     </div>
