@@ -2,335 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roshan | UI/UX Designer</title>
-
-  <link rel="stylesheet" href="styles.css"/>
-
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-  <!-- BACKGROUND EFFECTS -->
-  <div class="gradient-bg"></div>
-  <div class="noise"></div>
-
-  <!-- NAVBAR -->
-  <header class="navbar glass">
-
-    <div class="logo">
-      Roshan<span>.</span>
-    </div>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#case-studies">Case Studies</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Roshan.</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-
-    <a href="#contact" class="nav-btn">
-      Hire Me
-    </a>
-
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- Hero Section -->
   <section class="hero" id="home">
-
-    <div class="hero-content">
-
-      <div class="hero-tag glass">
-        ✨ UI/UX Designer & Creative Thinker
-      </div>
-
-      <h1>
-        Designing <span>Digital</span><br/>
-        Experiences That Feel Alive
-      </h1>
-
+    <div class="hero-content glass">
+      <h1>Hello, I'm <span>Roshan</span></h1>
+      <h2>UI/UX Designer</h2>
       <p>
-        Passionate UI/UX Designer with a background in AI & Data Science,
-        focused on creating elegant, intuitive, and user-centered digital products.
+        Passionate about creating elegant, intuitive, and user-friendly digital experiences.
       </p>
 
       <div class="hero-buttons">
-        <a href="#projects" class="primary-btn">View Projects</a>
-        <a href="#contact" class="secondary-btn">Let's Talk</a>
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
       </div>
-
     </div>
-
-    <div class="hero-visual glass">
-
-      <div class="floating-card glass">
-        <h3>UI Design</h3>
-        <p>Modern premium interfaces</p>
-      </div>
-
-      <div class="floating-card glass">
-        <h3>User Research</h3>
-        <p>Human-centered experiences</p>
-      </div>
-
-      <div class="floating-card glass">
-        <h3>Prototyping</h3>
-        <p>Interactive user flows</p>
-      </div>
-
-    </div>
-
   </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-
-    <div class="section-heading">
-      <span>About Me</span>
-      <h2>Creating Seamless Human Experiences</h2>
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="section-title">
+      <h2>About Me</h2>
     </div>
 
-    <div class="about-grid">
-
-      <div class="about-card glass">
-        <h3>Who I Am</h3>
-
-        <p>
-          I am a UI/UX Designer passionate about blending creativity,
-          technology, and usability into meaningful digital experiences.
-          With a strong background in AI & Data Science and advanced UI/UX specialization,
-          I create products that feel intuitive, elegant, and impactful.
-        </p>
-      </div>
-
-      <div class="about-card glass">
-        <h3>Education</h3>
-
-        <div class="edu-item">
-          <h4>PG Diploma in UI/UX Design</h4>
-          <p>ICAT Design & Media College</p>
-        </div>
-
-        <div class="edu-item">
-          <h4>B.Tech AI & Data Science</h4>
-          <p>Kongunadu College of Engineering & Technology</p>
-        </div>
-
-      </div>
-
+    <div class="about-card glass">
+      <p>
+        I am a creative UI/UX Designer with a background in Artificial Intelligence & Data Science and currently pursuing a PG Diploma in UI/UX Design.
+        I love transforming complex ideas into seamless digital experiences using clean visuals, interaction design, and user-centered thinking.
+      </p>
     </div>
-
   </section>
 
-  <!-- SKILLS -->
-  <section class="section" id="skills">
-
-    <div class="section-heading">
-      <span>Skills</span>
-      <h2>Tools & Expertise</h2>
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="section-title">
+      <h2>Skills</h2>
     </div>
 
     <div class="skills-grid">
-
-      <div class="skill-card glass">
-        <h3>UI Design</h3>
-        <p>Modern user interfaces with premium aesthetics.</p>
-      </div>
-
-      <div class="skill-card glass">
-        <h3>UX Research</h3>
-        <p>User behavior analysis and usability testing.</p>
-      </div>
-
-      <div class="skill-card glass">
-        <h3>Wireframing</h3>
-        <p>Low and high fidelity design structures.</p>
-      </div>
-
-      <div class="skill-card glass">
-        <h3>Prototyping</h3>
-        <p>Interactive product experiences using Figma.</p>
-      </div>
-
-      <div class="skill-card glass">
-        <h3>Frontend</h3>
-        <p>HTML, CSS, and responsive design principles.</p>
-      </div>
-
-      <div class="skill-card glass">
-        <h3>Creative Tools</h3>
-        <p>Figma, Photoshop, Illustrator & After Effects.</p>
-      </div>
-
+      <div class="skill-card glass">UI Design</div>
+      <div class="skill-card glass">UX Design</div>
+      <div class="skill-card glass">Wireframing</div>
+      <div class="skill-card glass">Prototyping</div>
+      <div class="skill-card glass">Figma</div>
+      <div class="skill-card glass">Photoshop</div>
+      <div class="skill-card glass">Illustrator</div>
+      <div class="skill-card glass">HTML & CSS</div>
     </div>
-
   </section>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-
-    <div class="section-heading">
-      <span>Projects</span>
-      <h2>Featured Projects</h2>
+  <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="section-title">
+      <h2>Projects</h2>
     </div>
 
-    <div class="projects-grid">
-
+    <div class="project-grid">
       <div class="project-card glass">
-
-        <div class="project-image"></div>
-
-        <div class="project-content">
-          <h3>ParentVoice</h3>
-
-          <p>
-            A storytelling and confidence-building mobile app for children,
-            designed with emotional engagement and accessibility in mind.
-          </p>
-
-          <a href="#">View Case Study →</a>
-        </div>
-
-      </div>
-
-      <div class="project-card glass">
-
-        <div class="project-image second"></div>
-
-        <div class="project-content">
-          <h3>Fitness Dashboard</h3>
-
-          <p>
-            Futuristic fitness analytics dashboard with clean layouts,
-            personalized tracking, and immersive interactions.
-          </p>
-
-          <a href="#">View Case Study →</a>
-        </div>
-
-      </div>
-
-      <div class="project-card glass">
-
-        <div class="project-image third"></div>
-
-        <div class="project-content">
-          <h3>Travel Experience App</h3>
-
-          <p>
-            A seamless travel planning experience focused on clarity,
-            accessibility, and smooth booking interactions.
-          </p>
-
-          <a href="#">View Case Study →</a>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- CASE STUDIES -->
-  <section class="section" id="case-studies">
-
-    <div class="section-heading">
-      <span>Case Studies</span>
-      <h2>My Design Process</h2>
-    </div>
-
-    <div class="case-grid">
-
-      <div class="case-card glass">
-        <h3>01. Research</h3>
-        <p>User interviews, competitor analysis, empathy mapping.</p>
-      </div>
-
-      <div class="case-card glass">
-        <h3>02. Wireframing</h3>
-        <p>Structuring smooth and intuitive user journeys.</p>
-      </div>
-
-      <div class="case-card glass">
-        <h3>03. UI Design</h3>
-        <p>Premium visual interfaces with modern interactions.</p>
-      </div>
-
-      <div class="case-card glass">
-        <h3>04. Testing</h3>
-        <p>Improving usability through feedback and iteration.</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="section" id="experience">
-
-    <div class="section-heading">
-      <span>Experience</span>
-      <h2>Professional Journey</h2>
-    </div>
-
-    <div class="timeline">
-
-      <div class="timeline-item glass">
-        <h3>UI/UX Designer</h3>
-        <span>2025 - Present</span>
-
+        <h3>ParentVoice App</h3>
         <p>
-          Designing intuitive interfaces, conducting user research,
-          and building interactive prototypes for modern applications.
+          A confidence-building storytelling platform for kids with an engaging and accessible user experience.
         </p>
+        <a href="#" class="project-btn">View Case Study</a>
       </div>
 
-      <div class="timeline-item glass">
-        <h3>UI/UX Projects & Case Studies</h3>
-        <span>2024 - 2025</span>
-
+      <div class="project-card glass">
+        <h3>Modern Dashboard</h3>
         <p>
-          Worked on multiple conceptual and real-world projects
-          focused on user-centered experiences.
+          Designed a responsive analytics dashboard with intuitive navigation and clean UI.
         </p>
+        <a href="#" class="project-btn">View Design</a>
       </div>
 
+      <div class="project-card glass">
+        <h3>Portfolio Website</h3>
+        <p>
+          A sleek personal portfolio with glassmorphism, smooth animations, and responsive layouts.
+        </p>
+        <a href="#" class="project-btn">View Website</a>
+      </div>
     </div>
-
   </section>
 
-  <!-- CONTACT -->
-  <section class="section contact-section" id="contact">
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="section-title">
+      <h2>Contact</h2>
+    </div>
 
     <div class="contact-card glass">
-
-      <span>Contact</span>
-
-      <h2>Let's Build Something Amazing</h2>
-
+      <p>📍 Bengaluru, India</p>
+      <p>📧 roshanromu15@gmail.com</p>
+      <p>📱 +91 9952409625</p>
       <p>
-        Open for freelance projects, collaborations, and exciting opportunities.
-      </p>
-
-      <div class="contact-links">
-        <a href="mailto:roshanromu15@gmail.com">Email Me</a>
-
+        🔗
         <a href="https://www.linkedin.com/in/roshan-b-0851b4251/" target="_blank">
-          LinkedIn
+          LinkedIn Profile
         </a>
-      </div>
-
+      </p>
     </div>
-
   </section>
+
+  <footer>
+    <p>© 2026 Roshan | UI/UX Designer</p>
+  </footer>
 
 </body>
 </html>
